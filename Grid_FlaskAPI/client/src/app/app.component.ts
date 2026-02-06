@@ -116,7 +116,6 @@ export class AppComponent implements AfterViewInit {
         action.requestType === 'stringfilterrequest'
       )
     ) {
-      console.log(res.result);
       (args as any).dataSource(res.result);
     } else {
       // Bind main grid data: expects { result, count }
